@@ -19,8 +19,10 @@ const skills = [
 
 const App = () => {
   return (
+    <div className='skills-container'>
+              <h2 >My Skills</h2>
+              <p  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis labore debitis perspiciatis nihil rerum id ipsa quibusdam nesciunt voluptatem dolores nemo, enim vero officiis voluptas odio dolore. Odit, tempore voluptate!</p>
     <div className="skills">
-       
       {skills.map((skill, index) => (
         <div key={index} className="skill-container">
           <span className="skill-name">{skill.name}</span>
@@ -33,6 +35,7 @@ const App = () => {
           </div>
         </div>
       ))}
+    </div>
     </div>
   );
 };

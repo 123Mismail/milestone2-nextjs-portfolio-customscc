@@ -50,6 +50,7 @@ const ContactSection = () => {
             </div>
             </form>
         </section>
+        
     </div>
   )
 }

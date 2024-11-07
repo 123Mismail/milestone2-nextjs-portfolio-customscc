@@ -1,5 +1,6 @@
 
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const AboutPage = () => {
@@ -12,7 +13,10 @@ const AboutPage = () => {
                     <h2>About Me</h2>
                     <h3>Hello I am a frontend developer .</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, quis sit. Quisquam, illum! Nam aperiam iusto exercitationem cumque eligendi accusamus a quae ducimus, libero et nesciunt inventore eaque possimus illo.</p>
-                    <button>My cv</button>
+                   <div className='about-buttons'>
+                   <Link href={'/'}><button>Go Back</button></Link>
+                   <Link href={'/skills'}><button>My Skills</button></Link>
+                   </div>
                 </div>
                 {/* right side  */}
                 <div className='about-right'>

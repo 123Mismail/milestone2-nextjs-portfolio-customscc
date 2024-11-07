@@ -18,7 +18,7 @@ body{
   justify-content: space-between;
   background-color: #26355D;
   color: white;
-  padding: 0 20px; /* Add padding for spacing */
+  padding: 10px 30px; /* Add padding for spacing */
 }
 
 .navbar h2 {
@@ -104,8 +104,10 @@ body{
 /* hero section */
 
 .hero{
+  
   margin: 0 0;
  max-width: 100vw;
+ width: 100%;
  max-height:calc(100vh - 65px);
  min-height: 100vh;
  
@@ -115,7 +117,7 @@ body{
   display: flex ;
   
   justify-content: center;
-  align-items: center;
+  
 }
 .hero-left{
   display: flex;
@@ -159,51 +161,66 @@ body{
 }
 /* about section */
 
- 
+ .about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
 
 .about-content{
   display: flex;
-  justify-content: space-between;
+  justify-content:center;
   align-items: center;
   padding: 2rem 4rem;
+  max-width: 80vw;
+  width: 100%;
+
 }
 .about-left{
   flex: 1;
   flex-direction: column ;
   justify-content: center;
   align-items: cneter;
+
 }
 .about-right{
   flex: 1;
+
 }
 .about-image{
    width: 100%;
 }
 .about-left h2{
-  font-size: 40px;
+  font-size: 3rem;
   font-weight: 700;
   color: #FF8F00;
+  padding: 1rem;
 }
 .about-left h3{
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 2rem;
+
+  font-weight: 600;
   color: chocolate;
+  padding: 1rem;
+
 }
 .about-left p{
+  padding: 1rem;
   font-size: 20px;
   font-weight: 500;
   line-height: 2rem;
   color: #AF47D2;
 }
 .about-left button{
-  padding: 5px 6px ;
-  background-color: #FFDB00;
+  padding: 1rem 2rem ;
+  background-color: #FF8F00;
   font-size: large;
   font-weight: 600;
   min-width: 7vw;
   color: white;
   border: none;
   border-radius: 5px;
+  margin-left: 1rem;
 }
 
 /*  */
@@ -239,15 +256,36 @@ body{
  
 
 /* Skills container */
+ 
+.skills-container h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 600;
+  font-size: 3rem;
+  padding-top: 2rem;
+ 
+  color: #FF8F00;
+}
+.skills-container p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   font-size: 1.3rem;
+  margin: 0 auto;
+  padding-top: 2rem;
+  color: #26355D;
+  padding: 1rem;
+}
 .skills {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 12px; /* Space between rows and columns */
+  gap: 12px; 
   max-width: 900px;
   padding-bottom: 3rem;
   margin: 0 auto; /* Center the container */
 }
-
+   
 /* Individual skill container */
 .skill-container {
   padding-top: 5rem;
@@ -367,7 +405,8 @@ body{
    width: 50vw;
   justify-content: center;
   align-items: flex-end;
-  box-shadow: 0 4px 20px rgba(38, 53, 93, 0.3);
+  border: 2px solid #333;
+   
   padding: 1rem;
   border-radius: 7px;
  }
@@ -392,8 +431,8 @@ body{
  outline: none;
 }
 .right-content button{
-  padding: 8px 8px ;
-  background-color: #FFDB00;
+  padding: 10px 20px ;
+  background-color: #FF8F00;
   color: white;
   font-size: 20px;
   font-weight: 500;
@@ -404,6 +443,7 @@ body{
 /* footer */
 .footer{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
    height: auto;
@@ -411,6 +451,24 @@ body{
   color: white;
   padding: 2rem 3rem;
 
+}
+ 
+/* added footers styles */
+.service-footer h3{
+  font-size: 1.8rem;
+  font-weight: 600;
+
+}
+.service-footer ul{
+  list-style: none;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+.service-footer ul li{
+  text-decoration: none;
+ padding-top: 0.3rem;
+ font-size: 1.1rem;
+   
 }
 .footer-content{
   display: flex;
@@ -423,19 +481,21 @@ body{
   
 }
 .footer-right{
-  max-width:20rem;
- gap: 2rem 1rem;
-} 
+  max-width:23vw;
+}
+ 
 .footer-right h3{
   text-align: center;
-  font-size: 34px;
-  padding: 1rem;
+  font-size: 30px;
+  padding: 0.2rem;
 }
 .footer-right p{
   line-height: 1.4rem;
   font-size: 18px;
   padding: 0.5rem;
 }
+/* old media */
+/* Responsive Styles for Mobile Devices */
 @media   (max-width: 759px) {
   .mob-navbar {
     display: flex;
@@ -451,17 +511,18 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100%;
-    margin-bottom: 20rem;
-    padding: 1rem 2rem;
+    margin-bottom: 45rem;
+    
+  
    
   }
   .hero-left {
     display: flex;
     max-width: 100%;
     flex-direction: column;
-    padding: 1rem 0;
+    
     min-height: 50vh;
-    padding-left: 20px;
+  
   }
   .hero-left h3 {
     font-size: 40px;
@@ -486,27 +547,33 @@ body{
   }
   .hero-image {
     max-width: 100%;
+    margin-bottom: 1rem;
     padding: 0;
   }
   .hero-right {
-    width: auto;              /* Allow width to fit content */
-    max-width: 100%;           /* Ensure it doesn’t overflow */
-    margin: 0 auto;            /* Center it if needed */
-    padding: 10px;             /* Optional: add some spacing */
-    display: flex;             /* Align child content */
+    width: auto;              
+    max-width: 100%;            
+    margin: 0 auto;           
+    padding: 10px;            
+    display: flex;              
     justify-content: center;
   }
   .about-content{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 100vw;
+    padding: 1rem;
     
   }
   .about-left{
+   
     max-width: 100%;
+    padding: 0px;
   }
 
   .about-left h3 {
+    
     font-size: 40px;
     font-weight: 700;
     max-width: 100%;
@@ -515,54 +582,79 @@ body{
   .about-left p {
     font-size: 22px;
     font-weight: 500;
-    max-width: 100vw;
+   
     text-align: left;
-    padding: 1rem 0rem;
+    
     line-height: 1.6rem;
   }
   .about-left h1 {
     font-size: 40px;
     font-weight: 600;
     padding: 1rem 0rem;
-    max-width: 100vw;
+    
     text-align: left;
   }
+  .about-buttons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: -1rem;
+
+  }
+ 
   .about-right{
     max-width: 100vw;
-    max-height: 100%;
+ 
     margin: 0;
     padding: 0;
   }
 
   .about-image{
-    max-width:100%;
+   
+    
+    width: 100%;
+   
  }
   .content {
     flex-direction: column;
   }
-  .skills {
+  /* .skills {
     grid-template-columns: repeat(1, 1fr);
     padding: 7px 20px;
     margin: 12vh 0;
-    gap: 7px;
+    gap: 3px;
+  } */
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 3 columns */
+    gap: 0px; 
+   
+    padding: 1rem 1.3rem;
+    max-width: 900px;
+    padding-bottom: 3rem;
+    margin: 0 auto; /* Center the container */
   }
   .footer {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 2rem;
     align-items: center;
     background-color: #26355D;
     color: white;
-    height: 100vh;
-     
+    gap: 1.5rem;
+    margin-top: 2rem;
+    min-height: 100vh;
+    padding-bottom: clamp(25rem, 5vw, 30rem)
   }
   .footer-right {
-    width: 100%;
-    min-height: 70%;
+    max-width: 500px;
+    
   }
   /* contact */
   .contact-section{
-    margin-top: 9rem;
-    padding: 2rem 2rem;
+     
+    padding: 3rem 2rem;
   }
   .form-contact{
       flex-direction: column;
@@ -590,5 +682,6 @@ body{
 
 }
 
+/* new media */
 
  

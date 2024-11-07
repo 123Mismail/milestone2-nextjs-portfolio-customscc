@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <div>
         <section className='footer '>
-          {/* left */}
-            <div className='footer-content'>
+          {/* 1st */}
+            <div >
                 <div style={{display:"flex", justifyContent:"center" ,alignItems:"center" , gap:"0.4rem" }}>
                     <FaLocationDot style={{fontSize:"30px" ,color:"#FF8F00"}}/>
                 <span>
@@ -36,7 +36,30 @@ const Footer = () => {
             
             
             </div>
-            {/* right */}
+            {/* 2nd */}
+            <div className='service-footer'>
+                <h3 >Services</h3>
+                <ul >
+                    <li >Web Development </li>
+                    <li >UI/UX Designing</li>
+                    <li >Full Stack Services</li>
+                    <li >SEO </li>
+                </ul>
+            </div>
+            {/* 3rd */}
+          
+            <div className='service-footer'>
+                <h3 >Skills</h3>
+                <ul >
+                    <li >Frontend Development </li>
+                    <li >UI/UX Expert</li>
+                    <li >SAS Building</li>
+                    <li >API Development </li>
+                </ul>
+            </div>
+           
+            {/* 4th */}
+         
             <div className='footer-right'>
                <h3>About Me</h3>
                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil dolorum, odio quo aut quam nobis quisquam excepturi, veritatis tempora cumque soluta, minima praesentium corporis fugiat</p>
