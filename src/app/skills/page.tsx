@@ -17,7 +17,7 @@ const skills = [
 
 ];
 
-const App = () => {
+const SkillsPage = () => {
   return (
     <div className='skills-container'>
               <h2 >My Skills</h2>
@@ -40,4 +40,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default SkillsPage;

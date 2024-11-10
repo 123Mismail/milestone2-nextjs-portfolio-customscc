@@ -256,6 +256,9 @@ body{
  
 
 /* Skills container */
+.skills-container{
+  width: 100%;
+}
  
 .skills-container h2{
   display: flex;
@@ -276,7 +279,7 @@ body{
   padding-top: 2rem;
   color: #26355D;
   padding: 1rem;
-  max-width: 60vw;
+  max-width: 76vw;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -285,6 +288,7 @@ body{
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
   gap: 12px; 
+  
   max-width: 900px;
   padding-bottom: 3rem;
   margin: 0 auto; /* Center the container */
@@ -292,13 +296,12 @@ body{
    
 /* Individual skill container */
 .skill-container {
+  width: 100%;
   padding-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  
- 
-  width: 100%; /* Full width within the grid column */
+  padding-bottom: 2rem;
 }
 
 /* Skill name */
@@ -351,8 +354,10 @@ body{
   padding: 3rem 2rem;
 }
 .contact-section h2{
+
   font-size: 40px;
   font-weight: 700;
+  padding-bottom: 1.5rem;
 }
  
  
